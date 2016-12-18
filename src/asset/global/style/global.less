@@ -1,0 +1,46 @@
+
+body {
+  font-family: "Microsoft YaHei", "Arial", "Hiragino Sans GB", "Helvetica", "sans-serif";
+  background: #f5f1ef;
+
+   // (待验证)webkit浏览器渲染出来的字体具有一定的平滑效果，所以chrome渲染出来的字体要大一点并且宽一点
+   // 关闭
+   // -webkit-font-smoothing: antialiased;
+   // -moz-osx-font-smoothing: antialiased;
+   // 启用
+   // -webkit-font-smoothing: subpixel-antialiased;
+   // -moz-osx-font-smoothing: auto;
+}
+
+ul, figure, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+#main {
+	width: 1190px;
+	// min-width: 1190px;
+	margin: 0 auto;
+}
+
+.badge {
+	box-sizing: border-box;
+	display: inline-block;
+	min-width: 18px;
+	height: 18px;
+	line-height: 18px;
+	border-radius: 18px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	background-color: red;
+
+	&:empty {
+		display: none;
+	}
+}
